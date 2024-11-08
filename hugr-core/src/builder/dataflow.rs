@@ -139,7 +139,8 @@ impl<B, T> DFGWrapper<B, T> {
 pub type FunctionBuilder<B> = DFGWrapper<B, BuildHandle<FuncID<true>>>;
 
 impl FunctionBuilder<Hugr> {
-    /// Initialize a builder for a FuncDefn rooted HUGR
+    /// Initialize a builder for a FuncDefn rooted HUGR.
+    ///
     /// # Errors
     ///
     /// Error in adding DFG child nodes.
